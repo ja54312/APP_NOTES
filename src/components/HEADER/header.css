@@ -1,0 +1,32 @@
+/*Header*/
+.header{
+    width: 100%;
+    height: auto;
+    min-width: 320px;
+}
+.header-navbar{
+    background-color:var(--header-color);
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.container-fluid{
+    display: flex;
+    flex-wrap: inherit;
+    align-items: center;
+    width: 97%;
+    background-color: inherit;
+}
+.header-logo{
+    background-color: inherit;
+    height: 50px;
+    width: 50px;
+}
+.header-title{
+    background-color: inherit;
+    color: white;
+    font-size:20px;
+}

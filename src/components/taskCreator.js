@@ -1,5 +1,6 @@
 import { useState } from "react";
 
+
 const TaskCreator = ({ createNewTask }) => {
   const [newTaskName, setNewTaskName] = useState("");
 
@@ -12,16 +13,19 @@ const TaskCreator = ({ createNewTask }) => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <input
-        type="text"
-        placeholder="Ingresa una nueva tarea"
-        value={newTaskName}
-        onChange={(e) => setNewTaskName(e.target.value)}
-      />
-
-      <button>Guardar Tarea</button>
-    </form>
+        <div className="container-Taskcreator">
+          <span>Agrega tus Tareas</span>
+          <form onSubmit={handleSubmit}>
+            <input
+              className="Taskcreator-input"
+              type="text"
+              placeholder="Ingresa una nueva tarea"
+              value={newTaskName}
+              onChange={(e) => setNewTaskName(e.target.value)}
+            />
+            <button>Guardar</button>
+          </form>
+        </div>
   );
 };
 

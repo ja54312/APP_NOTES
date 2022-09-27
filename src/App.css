@@ -1,38 +1,58 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.container-body{
+  width: 100%;
+  height: auto;
   display: flex;
+  justify-content: center;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-content: center;
 }
-
-.App-link {
-  color: #61dafb;
+/*TASK CREATOR*/
+.container-Taskcreator{
+  min-height: 50px;
+  padding: 20px 0;
+  text-align: center;
 }
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.container-Taskcreator span{
+  font-size: 20px;
+  font-weight: bold;
+}
+.container-Taskcreator form{
+  border: 1px solid;
+  padding: 15px;
+  background-color: var(--card-color);
+}
+.Taskcreator-input{
+  border: none;
+  text-decoration: underline;
+  text-decoration: var(--underline-color);
+  background-color: inherit;
+  color: var(--text-card-color);
+}
+.Taskcreator-input:focus-visible{
+  background: inherit;
+  outline: none;
+}
+.Taskcreator-input::placeholder{
+  color: var(--text-card-color);
+}
+.container-Taskcreator button{
+  background-color: var(--button-save-color);
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.container-visibilityControl button{
+  background-color: var(--button-danger-color);
+  cursor: pointer;
+  padding: 2px;
+  border-radius: 5px;
+  margin: 0 5px;
+}
+.container-visibilityControl .boton-eliminar{
+  width: 20px;
+  height: 20px;
+  margin: 0 2px;
+  background-color: inherit;
 }

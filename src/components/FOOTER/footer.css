@@ -1,0 +1,22 @@
+/*Footer*/
+.footer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--footer-color);
+    min-width:320px;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+}
+.text-footer{
+    color: var(--text-footer-color);
+    padding: 0  10px;
+    margin: 0;
+    background-color: inherit;
+}
+.text-footer a {
+    text-decoration: none;
+    color: var(--text-footer-color);
+    background-color: inherit;
+}

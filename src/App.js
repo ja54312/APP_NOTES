@@ -1,8 +1,10 @@
 import { useState ,useEffect } from "react";
 import "./App.css";
+import Header from "./components/HEADER/header";
 import TaskCreator from "./components/taskCreator";
 import TaskTable from "./components/taskTable";
 import VisibilityControl from "./components/VisibilityControl";
+import Footer from "./components/FOOTER/footer";
 
 function App() {
   const [taskItems, setTaskItems] = useState([]);
@@ -38,10 +40,14 @@ function App() {
 
   return (
     <div className="App">
-      <TaskCreator createNewTask={createNewTask} />
-      <TaskTable tasks={taskItems} toogleTask={toogleTask}/>
-       <VisibilityControl setShowCompleted={(checked) => setShowCompleted(checked)} cleanTask={cleanTask} isChecked={showCompleted}/>
-      {showCompleted && <TaskTable tasks={taskItems} toogleTask={toogleTask} showCompleted={showCompleted}/>}
+      <Header/>
+      <div className="container-body">
+        <TaskCreator createNewTask={createNewTask} />
+        <TaskTable tasks={taskItems} toogleTask={toogleTask}/>
+        <VisibilityControl setShowCompleted={(checked) => setShowCompleted(checked)} cleanTask={cleanTask} isChecked={showCompleted}/>
+        {showCompleted && <TaskTable tasks={taskItems} toogleTask={toogleTask} showCompleted={showCompleted}/>}
+      </div>
+      <Footer/>
     </div>
   );
 }
