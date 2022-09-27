@@ -18,9 +18,9 @@
   font-weight: bold;
 }
 .container-Taskcreator form{
-  border: 1px solid;
   padding: 15px;
   background-color: var(--card-color);
+  border-radius: 5px;
 }
 .Taskcreator-input{
   border: none;
