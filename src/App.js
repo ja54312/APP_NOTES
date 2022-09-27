@@ -43,9 +43,9 @@ function App() {
       <Header/>
       <div className="container-body">
         <TaskCreator createNewTask={createNewTask} />
-        <TaskTable tasks={taskItems} toogleTask={toogleTask}/>
+        <TaskTable tasks={taskItems} toogleTask={toogleTask} TareasName='Tareas por hacer'/>
         <VisibilityControl setShowCompleted={(checked) => setShowCompleted(checked)} cleanTask={cleanTask} isChecked={showCompleted}/>
-        {showCompleted && <TaskTable tasks={taskItems} toogleTask={toogleTask} showCompleted={showCompleted}/>}
+        {showCompleted && <TaskTable tasks={taskItems} toogleTask={toogleTask} showCompleted={showCompleted} TareasName='Tareas Realizadas'/>}
       </div>
       <Footer/>
     </div>

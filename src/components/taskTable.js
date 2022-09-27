@@ -1,6 +1,6 @@
 import TaskRow from "./taskRow"
 
-const TaskTable = ({tasks,toogleTask,showCompleted = false}) => {
+const TaskTable = ({tasks,toogleTask,TareasName,showCompleted = false}) => {
 
     const taskTableRows = (doneValue) =>{
 
@@ -18,7 +18,7 @@ const TaskTable = ({tasks,toogleTask,showCompleted = false}) => {
         <table>
         <thead>
           <tr>
-            <th>Tareas</th>
+            <th>{TareasName}</th>
           </tr>
         </thead>
         <tbody>

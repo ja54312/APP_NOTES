@@ -43,6 +43,17 @@
   border-radius: 5px;
   margin: 0 5px;
 }
+/*Tareas*/
+.container-tarea{
+  padding: 15px;
+  background-color: var(--card-color);
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+/*Visibility Control*/
 .container-visibilityControl button{
   background-color: var(--button-danger-color);
   cursor: pointer;

@@ -1,13 +1,15 @@
 const TaskRow = ({task,toogleTask}) => {
     return(
         <tr>
-            <td>
+            <td className="container-tarea">
             {task.name}
-            <input 
-                type='checkbox'
-                checked={task.done}
-                onChange={()=> toogleTask(task)}
-            />
+                <input 
+                    className="checkbox-tarea"
+                    type='checkbox'
+                    hidden=""
+                    checked={task.done}
+                    onChange={()=> toogleTask(task)}
+                />
             </td>
         </tr>
     )
