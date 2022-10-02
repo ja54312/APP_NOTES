@@ -20,3 +20,8 @@
     color: var(--text-footer-color);
     background-color: inherit;
 }
+@media screen and (max-width:767px) {
+    .text-footer{
+        padding: 0;
+    }
+}
